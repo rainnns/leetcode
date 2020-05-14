@@ -6,6 +6,7 @@ public class Solution {
     public boolean wordBreak(String s, List<String> wordDict) {
         return word_Break(s, new HashSet<>(wordDict), 0);
     }
+
     public boolean word_Break(String s, Set<String> wordDict, int start) {
         if (start == s.length()) {
             return true;
