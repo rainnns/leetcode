@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 class SolutionTest {
 
     @org.junit.jupiter.api.Test
