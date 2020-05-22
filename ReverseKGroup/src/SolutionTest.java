@@ -8,7 +8,7 @@ class SolutionTest {
         head.next.next.next =  new ListNode(4);
         head.next.next.next.next = new ListNode(5);
         Solution solution = new Solution();
-        ListNode h = solution.reverseKGroup(head,1);
+        ListNode h = solution.reverseKGroup(head,2);
         while (h != null){
             System.out.println(h.val);
             h = h.next;
