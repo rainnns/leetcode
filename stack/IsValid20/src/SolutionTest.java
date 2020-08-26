@@ -10,6 +10,6 @@ class SolutionTest {
     @Test
     void isValid() {
         Solution solution = new Solution();
-        System.out.println(solution.isValid(""));
+        System.out.println(solution.isValid("{[]}"));
     }
 }
