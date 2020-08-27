@@ -19,4 +19,10 @@ class SolutionTest {
         int[] height = new int[]{1};
         System.out.println(solution.trap2(height));
     }
+
+    @Test
+    void trap3() {
+        int[] height = new int[]{0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
+        System.out.println(solution.trap4(height));
+    }
 }
