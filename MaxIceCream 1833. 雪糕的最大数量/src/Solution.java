@@ -60,7 +60,7 @@ public class Solution {
     public static void main(String[] args) {
         int[] costs = new int[]{10,6,8,7,7,8};
         int coins = 20;
-        System.out.println(new Solution().maxIceCream(costs, coins));
+        System.out.println(new Solution().maxIceCream2(costs, coins));
     }
 
 }
