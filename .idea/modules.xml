@@ -29,6 +29,7 @@
       <module fileurl="file://$PROJECT_DIR$/stack/LargestRectangleArea84/LargestRectangleArea84.iml" filepath="$PROJECT_DIR$/stack/LargestRectangleArea84/LargestRectangleArea84.iml" />
       <module fileurl="file://$PROJECT_DIR$/ListTargetSum/ListTargetSum.iml" filepath="$PROJECT_DIR$/ListTargetSum/ListTargetSum.iml" />
       <module fileurl="file://$PROJECT_DIR$/LongestCommonPrefix/LongestCommonPrefix.iml" filepath="$PROJECT_DIR$/LongestCommonPrefix/LongestCommonPrefix.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LongestCommonSubsequence1143. 最长公共子序列/LongestCommonSubsequence1143. 最长公共子序列.iml" filepath="$PROJECT_DIR$/LongestCommonSubsequence1143. 最长公共子序列/LongestCommonSubsequence1143. 最长公共子序列.iml" />
       <module fileurl="file://$PROJECT_DIR$/MajorityElement面试题 17.10. 主要元素/MajorityElement面试题 17.10. 主要元素.iml" filepath="$PROJECT_DIR$/MajorityElement面试题 17.10. 主要元素/MajorityElement面试题 17.10. 主要元素.iml" />
       <module fileurl="file://$PROJECT_DIR$/MaxFrequency1838. 最高频元素的频数/MaxFrequency1838. 最高频元素的频数.iml" filepath="$PROJECT_DIR$/MaxFrequency1838. 最高频元素的频数/MaxFrequency1838. 最高频元素的频数.iml" />
       <module fileurl="file://$PROJECT_DIR$/MaxIceCream 1833. 雪糕的最大数量/MaxIceCream 1833. 雪糕的最大数量.iml" filepath="$PROJECT_DIR$/MaxIceCream 1833. 雪糕的最大数量/MaxIceCream 1833. 雪糕的最大数量.iml" />
@@ -40,6 +41,7 @@
       <module fileurl="file://$PROJECT_DIR$/MaximumElementAfterDecrementingAndRearranging 1846. 减小和重新排列数组后的最大元素/MaximumElementAfterDecrementingAndRearranging 1846. 减小和重新排列数组后的最大元素.iml" filepath="$PROJECT_DIR$/MaximumElementAfterDecrementingAndRearranging 1846. 减小和重新排列数组后的最大元素/MaximumElementAfterDecrementingAndRearranging 1846. 减小和重新排列数组后的最大元素.iml" />
       <module fileurl="file://$PROJECT_DIR$/MaximumTime1736. 替换隐藏数字得到的最晚时间/MaximumTime1736. 替换隐藏数字得到的最晚时间.iml" filepath="$PROJECT_DIR$/MaximumTime1736. 替换隐藏数字得到的最晚时间/MaximumTime1736. 替换隐藏数字得到的最晚时间.iml" />
       <module fileurl="file://$PROJECT_DIR$/MinAbsoluteSumDiff1818. 绝对差值和/MinAbsoluteSumDiff1818. 绝对差值和.iml" filepath="$PROJECT_DIR$/MinAbsoluteSumDiff1818. 绝对差值和/MinAbsoluteSumDiff1818. 绝对差值和.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MinOperations1713. 得到子序列的最少操作次数/MinOperations1713. 得到子序列的最少操作次数.iml" filepath="$PROJECT_DIR$/MinOperations1713. 得到子序列的最少操作次数/MinOperations1713. 得到子序列的最少操作次数.iml" />
       <module fileurl="file://$PROJECT_DIR$/MinPairSum1877. 数组中最大数对和的最小值/MinPairSum1877. 数组中最大数对和的最小值.iml" filepath="$PROJECT_DIR$/MinPairSum1877. 数组中最大数对和的最小值/MinPairSum1877. 数组中最大数对和的最小值.iml" />
       <module fileurl="file://$PROJECT_DIR$/New21Game/New21Game.iml" filepath="$PROJECT_DIR$/New21Game/New21Game.iml" />
       <module fileurl="file://$PROJECT_DIR$/农行/NongHang2021/NongHang2021.iml" filepath="$PROJECT_DIR$/农行/NongHang2021/NongHang2021.iml" />
