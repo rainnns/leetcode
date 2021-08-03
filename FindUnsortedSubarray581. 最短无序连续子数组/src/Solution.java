@@ -63,6 +63,7 @@ public class Solution {
         return true;
     }
 
+    //一次遍历 , 双指针
     public int findUnsortedSubarray3(int[] nums) {
         int n = nums.length;
         int maxn = Integer.MIN_VALUE, right = -1;
@@ -85,6 +86,6 @@ public class Solution {
 
     public static void main(String[] args) {
         int[] nums = new int[]{1, 3, 5, 4, 2};
-        System.out.println(new Solution().findUnsortedSubarray(nums));
+        System.out.println(new Solution().findUnsortedSubarray3(nums));
     }
 }
