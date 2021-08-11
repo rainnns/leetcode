@@ -45,7 +45,7 @@ public class Solution {
     }
 
 
-     public int minOperations1(int[] target, int[] arr) {
+    public int minOperations1(int[] target, int[] arr) {
         int n = target.length;
         Map<Integer, Integer> pos = new HashMap<Integer, Integer>();
         for (int i = 0; i < n; ++i) {
@@ -81,6 +81,12 @@ public class Solution {
             }
         }
         return low;
+    }
+
+    public static void main(String[] args) {
+        int[] target = new int[]{6,4,8,1,3,2};
+        int[] arr = new int[]{4,7,6,2,3,8,6,1};
+        System.out.println(new Solution().minOperations1(target, arr));
     }
 
 }
