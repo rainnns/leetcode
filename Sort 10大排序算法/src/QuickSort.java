@@ -10,7 +10,7 @@ import java.util.Arrays;
 public class QuickSort {
 
     //随机快排
-    public int partition(int[] nums, int l, int r) {
+    public int partitionRandom(int[] nums, int l, int r) {
         swap(nums, l, (int) (Math.random() * (r - l + 1)) + l);
         int v = nums[l];
         int j = l;
@@ -34,7 +34,7 @@ public class QuickSort {
         if (l >= r) {
             return;
         }
-        int p = partition(arr, l, r);
+        int p = partitionRandom(arr, l, r);
         sort(arr, l, p - 1);
         sort(arr, p + 1, r);
     }
@@ -43,6 +43,31 @@ public class QuickSort {
         int n = arr.length;
         sort(arr, 0, n - 1);
     }
+
+    //普通快排
+    public int partition(int[] nums, int left, int right) {
+        //设定基准值
+        int pivot = nums[left];
+        int index = left;
+        for (int i = index; i <= right; i++) {
+            if (nums[i] < pivot) {
+                swap(nums, i, index);
+                index++;
+            }
+        }
+        swap(nums, left, index);
+        return index;
+    }
+
+    private int[] quickSort(int[] arr, int left, int right) {
+        if (left < right) {
+            int partitionIndex = partition(arr, left, right);
+            quickSort(arr, left, partitionIndex - 1);
+            quickSort(arr, partitionIndex + 1, right);
+        }
+        return arr;
+    }
+
 
     public static void main(String[] args) {
         int[] arr = new int[]{4, 5, 3, 1, 7, 3, 5};
