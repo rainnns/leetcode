@@ -109,6 +109,7 @@
       <module fileurl="file://$PROJECT_DIR$/ZShapeTrans/ZShapeTrans.iml" filepath="$PROJECT_DIR$/ZShapeTrans/ZShapeTrans.iml" />
       <module fileurl="file://$PROJECT_DIR$/leetcode.iml" filepath="$PROJECT_DIR$/leetcode.iml" />
       <module fileurl="file://$PROJECT_DIR$/backTracking/solveNQueens0812/solveNQueens0812.iml" filepath="$PROJECT_DIR$/backTracking/solveNQueens0812/solveNQueens0812.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xiaomi/xiaomi.iml" filepath="$PROJECT_DIR$/xiaomi/xiaomi.iml" />
     </modules>
   </component>
 </project>
