@@ -31,10 +31,10 @@ public class Solution1 {
     public int getLength(int state) {
         int count = 0;
         while (state != 0) {
-            if ((state & 1) == 1) {
+            if ((state & 1) != 0) {
                 count += 1;
             }
-            state <<= 1;
+            state >>= 1;
         }
         return count;
     }
@@ -49,7 +49,7 @@ public class Solution1 {
             index++;
             state >>= 1;
         }
-        for (int i = 0; i < stringBuilder.length(); i++) {
+        for (int i = 0; i * 2 < stringBuilder.length(); i++) {
             if (stringBuilder.charAt(i) != stringBuilder.charAt(stringBuilder.length() - i - 1)) {
                 return false;
             }
@@ -58,6 +58,6 @@ public class Solution1 {
     }
 
     public static void main(String[] args) {
-        System.out.println(new Solution().maxProduct("leetcodecom"));
+        System.out.println(new Solution1().maxProduct("leetcodecom"));
     }
 }
