@@ -125,6 +125,7 @@
       <module fileurl="file://$PROJECT_DIR$/ZShapeTrans/ZShapeTrans.iml" filepath="$PROJECT_DIR$/ZShapeTrans/ZShapeTrans.iml" />
       <module fileurl="file://$PROJECT_DIR$/leetcode.iml" filepath="$PROJECT_DIR$/leetcode.iml" />
       <module fileurl="file://$PROJECT_DIR$/backTracking/solveNQueens0812/solveNQueens0812.iml" filepath="$PROJECT_DIR$/backTracking/solveNQueens0812/solveNQueens0812.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vivo/vivo.iml" filepath="$PROJECT_DIR$/vivo/vivo.iml" />
       <module fileurl="file://$PROJECT_DIR$/xiaomi/xiaomi.iml" filepath="$PROJECT_DIR$/xiaomi/xiaomi.iml" />
       <module fileurl="file://$PROJECT_DIR$/xiecheng/xiecheng.iml" filepath="$PROJECT_DIR$/xiecheng/xiecheng.iml" />
     </modules>
