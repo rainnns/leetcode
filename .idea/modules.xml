@@ -134,6 +134,7 @@
       <module fileurl="file://$PROJECT_DIR$/vivo/vivo.iml" filepath="$PROJECT_DIR$/vivo/vivo.iml" />
       <module fileurl="file://$PROJECT_DIR$/xiaomi/xiaomi.iml" filepath="$PROJECT_DIR$/xiaomi/xiaomi.iml" />
       <module fileurl="file://$PROJECT_DIR$/xiecheng/xiecheng.iml" filepath="$PROJECT_DIR$/xiecheng/xiecheng.iml" />
+      <module fileurl="file://$PROJECT_DIR$/剑指Offer第二版/剑指Offer第二版.iml" filepath="$PROJECT_DIR$/剑指Offer第二版/剑指Offer第二版.iml" />
     </modules>
   </component>
 </project>
