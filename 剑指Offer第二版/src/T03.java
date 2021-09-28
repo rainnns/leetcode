@@ -5,7 +5,7 @@ import java.util.HashSet;
  * @time 2021-09-28-10:08
  * @description 剑指 Offer 03. 数组中重复的数字
  */
-public class FindRepeatNumber03 {
+public class T03 {
     //HashSet
     // O(n) ; O(n)
     public int findRepeatNumber1(int[] nums) {
