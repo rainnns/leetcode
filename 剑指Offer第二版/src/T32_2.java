@@ -19,15 +19,15 @@ public class T32_2 {
         Queue<TreeNode> queue = new LinkedList<>() {{
             add(root);
         }};
-        while (!queue.isEmpty()){
+        while (!queue.isEmpty()) {
             List<Integer> t = new ArrayList<>();
-            for (int i = queue.size(); i > 0 ; i--) {
+            for (int i = queue.size(); i > 0; i--) {
                 TreeNode node = queue.poll();
                 t.add(node.val);
-                if (node.left != null){
+                if (node.left != null) {
                     queue.add(node.left);
                 }
-                if (node.right != null){
+                if (node.right != null) {
                     queue.add(node.right);
                 }
             }
