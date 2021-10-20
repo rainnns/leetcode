@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 /**
  * @author wwx-sys
  * @time 2021-10-20-16:33
@@ -61,6 +63,7 @@ public class KMP {
         return count;
     }
 
+    //处理了P[j] == P[next[j]]之后的next
     public int[] getNext(char[] p) {
         int[] next = new int[p.length];
         next[0] = -1;
@@ -81,7 +84,24 @@ public class KMP {
         return next;
     }
 
+    //原生的next方法
+    public int[] getNext(String ps){
+        char[] p = ps.toCharArray();
+        int[] next = new int[p.length];
+        next[0] = -1;
+        int j = 0 , k = -1;
+        while (j < p.length - 1){
+            if (k == -1 || p[j] == p[k]){
+                next[++j] = ++k;
+            }else {
+                k = next[k];
+            }
+        }
+        return next;
+    }
+
     public static void main(String[] args) {
         System.out.println(new KMP().kmpCount("qweqwoppoadadoppoad", "oppo"));
+        System.out.println(Arrays.toString(new KMP().getNext("ABABC")));
     }
 }
