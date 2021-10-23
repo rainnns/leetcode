@@ -51,8 +51,8 @@ public class QuickSort {
         int index = left;
         for (int i = index; i <= right; i++) {
             if (nums[i] < pivot) {
-                swap(nums, i, index);
                 index++;
+                swap(nums, i, index);
             }
         }
         swap(nums, left, index);
@@ -70,8 +70,9 @@ public class QuickSort {
 
 
     public static void main(String[] args) {
-        int[] arr = new int[]{4, 5, 3, 1, 7, 3, 5};
-        new QuickSort().sort(arr);
+        int[] arr = new int[]{5,3,7,6,4,1,0,2,9,10,8};
+//        new QuickSort().sort(arr);
+        new QuickSort().quickSort(arr,0,arr.length -1);
         System.out.println(Arrays.toString(arr));
     }
 
