@@ -9,42 +9,16 @@ import java.util.Arrays;
 
 public class QuickSort {
 
-    //随机快排
-    public int partitionRandom(int[] nums, int l, int r) {
-        swap(nums, l, (int) (Math.random() * (r - l + 1)) + l);
-        int v = nums[l];
-        int j = l;
-        for (int i = l + 1; i <= r; i++)
-            if (nums[i] < v) {
-                j++;
-                swap(nums, j, i);
-            }
-        swap(nums, l, j);
-        return j;
-    }
-
-    public void swap(int[] nums, int l, int r) {
-        int t = nums[l];
-        nums[l] = nums[r];
-        nums[r] = t;
-    }
-
-    // 递归使用快速排序,对arr[l...r]的范围进行排序
-    private void sort(int[] arr, int l, int r) {
+    //方式一
+    public void quickSort1(int[] nums, int l, int r) {
         if (l >= r) {
             return;
         }
-        int p = partitionRandom(arr, l, r);
-        sort(arr, l, p - 1);
-        sort(arr, p + 1, r);
+        int p = partition(nums, l, r);
+        quickSort1(nums, l, p - 1);
+        quickSort1(nums, p + 1, r);
     }
 
-    public void sort(int[] arr) {
-        int n = arr.length;
-        sort(arr, 0, n - 1);
-    }
-
-    //普通快排
     public int partition(int[] nums, int left, int right) {
         //设定基准值
         int pivot = nums[left];
@@ -59,20 +33,33 @@ public class QuickSort {
         return index;
     }
 
-    private int[] quickSort(int[] arr, int left, int right) {
-        if (left < right) {
-            int partitionIndex = partition(arr, left, right);
-            quickSort(arr, left, partitionIndex - 1);
-            quickSort(arr, partitionIndex + 1, right);
+    public void swap(int[] nums, int l, int r) {
+        int t = nums[l];
+        nums[l] = nums[r];
+        nums[r] = t;
+    }
+
+    public void quickSort2(int[] nums, int l, int r) {
+        if (l > r) {
+            return;
         }
-        return arr;
+        int i = l, j = r;
+        int pivot = nums[l];
+        while (i < j) {
+            while (nums[j] >= pivot && i < j) j--;
+            while (nums[i] <= pivot && i < j) i++;
+            swap(nums, i, j);
+        }
+        swap(nums, l, i);
+        quickSort2(nums, l, i - 1);
+        quickSort2(nums, i + 1, r);
     }
 
 
     public static void main(String[] args) {
-        int[] arr = new int[]{5,3,7,6,4,1,0,2,9,10,8};
+        int[] arr = new int[]{5, 3, 7, 6, 4, 1, 0, 2, 9, 10, 8};
 //        new QuickSort().sort(arr);
-        new QuickSort().quickSort(arr,0,arr.length -1);
+        new QuickSort().quickSort2(arr, 0, arr.length - 1);
         System.out.println(Arrays.toString(arr));
     }
 
