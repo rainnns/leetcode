@@ -29,9 +29,10 @@ public class T45 {
             return;
         }
         int i = l, j = r;
+        String pivot = strings[l];
         while (i < j) {
-            while ((strings[j] + strings[l]).compareTo(strings[l] + strings[j]) >= 0 && i < j) j--;
-            while ((strings[i] + strings[l]).compareTo(strings[l] + strings[i]) <= 0 && i < j) i++;
+            while ((strings[j] + pivot).compareTo(pivot + strings[j]) >= 0 && i < j) j--;
+            while ((strings[i] + pivot).compareTo(pivot + strings[i]) <= 0 && i < j) i++;
             swap(strings, i, j);
         }
         swap(strings, l, i);
